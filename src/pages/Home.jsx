@@ -3,7 +3,7 @@ import GameCard from "../components/GameCard";
 import Loading from "../components/Loading";
 import ErrorMessage from "../components/ErrorMessage";
 
-export default function Home({ favorites = [vori], toggleFate }) {
+export default function Home({ favorites = [], toggleFavorite }) {
   const [games, setGames] = useState([]);
   const [search, setSearch] = useState("");
   const [genre, setGenre] = useState("All");
@@ -16,7 +16,7 @@ export default function Home({ favorites = [vori], toggleFate }) {
       try {
         setLoading(true);
 
-        const res = await fetch("/.netlify/functions/games");
+        const res = await fetch("/api/games?platform=pc");
         if (!res.ok) throw new Error("No se pudo cargar la API");
 
         const data = await res.json();

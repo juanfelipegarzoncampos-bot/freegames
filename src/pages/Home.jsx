@@ -16,7 +16,7 @@ export default function Home({ favorites = [vori], toggleFate }) {
       try {
         setLoading(true);
 
-        const res = await fetch("/api/api/games?platform=pc");
+        const res = await fetch("/.netlify/functions/games");
         if (!res.ok) throw new Error("No se pudo cargar la API");
 
         const data = await res.json();

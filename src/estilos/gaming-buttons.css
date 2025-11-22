@@ -1,0 +1,9 @@
+/* ===== GAMING BUTTONS (MEJORADO) ===== */
+
+.btn-primary,
+.btn-outline,
+.btn-danger {
+  margin-top: 6px; /* SEPARA DE ELEMENTOS */
+  padding-top: 11px;
+  padding-bottom: 11px;
+}

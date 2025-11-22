@@ -1,0 +1,61 @@
+/* ===== ABOUT PAGE ===== */
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  .about-title {
+    font-size: 2.4rem;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .about-card {
+    background: #1a1f29;
+    padding: 22px 26px;
+    margin-bottom: 22px;
+    border-radius: 16px;
+    border: 1px solid #334155;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .about-card h2 {
+    color: #60a5fa;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+  }
+  
+  .about-card p,
+  .about-card li {
+    color: #d1d5db;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  .about-card ul {
+    padding-left: 20px;
+  }
+  
+  .about-card li {
+    margin-bottom: 6px;
+  }
+  
+  /* Animación suave */
+  .fade-in {
+    animation: fadeIn 0.6s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

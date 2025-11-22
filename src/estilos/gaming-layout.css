@@ -1,0 +1,49 @@
+/* ===== GAMING LAYOUT (MEJORADO) ===== */
+
+.page-container {
+  width: 92%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 40px 0; /* MÁS ESPACIO SUPERIOR/INFERIOR */
+}
+
+.grid-games {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px; /* MÁS ESPACIADO ENTRE TARJETAS */
+  margin-top: 30px; /* SEPARAR TARJETAS DEL INPUT */
+}
+
+.section-title {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #60a5fa;
+  margin-bottom: 30px; /* SEPARAR DEL INPUT */
+  text-shadow: 0 0 20px rgba(96,165,250,0.5);
+}
+
+.center-text {
+  text-align: center;
+  margin-top: 60px; /* MÁS ESPACIO */
+  color: #93a3b8;
+}
+/* ===== GAME DETAILS SPACING ===== */
+
+.game-details-box {
+  padding: 35px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+.game-details-box img {
+  margin-bottom: 25px;
+}
+
+.game-details-box p {
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.game-details-tags {
+  margin-bottom: 25px;
+}

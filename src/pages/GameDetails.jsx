@@ -12,7 +12,7 @@ export default function GameDetails() {
   useEffect(() => {
     async function loadGame() {
       try {
-        const res = await fetch(`https://www.freetogame.com/api/game?id=${id}`);        ;
+        const res = await fetch(`/api/api/game?id=${id}`);
 
         if (!res.ok) throw new Error("Error al cargar el juego.");
 

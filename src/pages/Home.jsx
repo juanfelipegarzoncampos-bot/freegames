@@ -3,7 +3,7 @@ import GameCard from "../components/GameCard";
 import Loading from "../components/Loading";
 import ErrorMessage from "../components/ErrorMessage";
 
-export default function Home({ favorites = [vori], toggleFate }) {
+export default function Home({ favorites = [], toggleFavorite }) {
   const [games, setGames] = useState([]);
   const [search, setSearch] = useState("");
   const [genre, setGenre] = useState("All");

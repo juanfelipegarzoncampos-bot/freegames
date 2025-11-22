@@ -16,7 +16,7 @@ export default function Home({ favorites = [], toggleFavorite }) {
       try {
         setLoading(true);
 
-        const res = await fetch("/api/games?platform=pc");
+        const res = await fetch("https://www.freetogame.com/api/games?platform=pc");
         if (!res.ok) throw new Error("No se pudo cargar la API");
 
         const data = await res.json();

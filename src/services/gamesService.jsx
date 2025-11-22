@@ -1,7 +1,7 @@
-const BASE = "/.netlify/functions";
+const BASE = "https://www.freetogame.com/api";
 
 export async function fetchGames() {
-  const res = await fetch(`${BASE}/games`);
+  const res = await fetch(`${BASE}/games?platform=pc`);
   return res.json();
 }
 
